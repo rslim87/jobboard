@@ -1,0 +1,15 @@
+<h3>Title: <%= @job.title %></h3>
+<p>Description: <%= @job.description %></p>
+<p>City and State: <%= @job.city %>, <%= @job.state %></p>
+
+<p>Job Role: <%= @job.role.role_type %></p>
+<p>Industry: <%= @job.industry.industry_type %></p>
+<p>Experience Level: <%= @job.experience.level %></p>
+
+<p>Posted Date: <%= @job.posted %></p>
+
+<div>
+	<%= link_to "Edit Posting", edit_job_path(@job)%>
+	<%= link_to "Delete Posting", @job, method: :delete %>
+</div>
+
